@@ -27,6 +27,20 @@
 
             $this->assertEquals("I like cake", $result);
         }
+
+        function test_findAndReplace_partial()
+        {
+            $test_Find = new Find;
+            $input1 = "In a cathedral";
+            $input2 = "the";
+            $input3 = "dog";
+
+            $result = $test_Find->findAndReplace($input1, $input2, $input3);
+
+            $this->assertEquals("In a cadogdral", $result);
+
+
+        }
     }
 
 
