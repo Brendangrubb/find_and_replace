@@ -3,7 +3,7 @@
     {
         function findAndReplace($input_string, $search_word, $replace_word)
         {
-            $return_string = str_replace($search_word, $replace_word, $input_string);
+            $return_string = ($search_word, $replace_word, $input_string);
             // $split_input_string = explode(" ", $input_string);
             // foreach ($split_input_string as $word)
             // {
